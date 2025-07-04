@@ -20,7 +20,6 @@
                 <ul>
                     <li><a class="link" href="/index.html"><i class="inicio"></i>Início</a></li>
                     <li><a class="link" href="blog.html"><i class="blog"></i>Blog</a></li>
-                    <li><a class="link" href="conteudo.html"><i class="conteudo"></i>Conteúdo</a></li>
                     <li><a class="link" href="contato.html"><i class="contato"></i>Contato</a></li>
                 </ul>
             </nav>
@@ -28,17 +27,48 @@
 
         <main class="content">
             <section class="me">
-                <h3>Entre em Contato Comigo!</h3><br>
-                <p>Para isso você pode acessa minhas redes sociais e e-mail.</p>
+                <h3>Entre em Contato Comigo!</h3>
+                <br>
+                <p class="p-contato">Para isso você pode acessa minhas redes sociais e e-mail.</p>
+                <br>
                 <ul>
                     <li>Email: <a href="mailto:arpiovesana@gmail.com">arpiovesana@gmail.com</a></li>
                     <li>Instagram: <a href="https://instagram.com/_mandiika" target="_blank">@_mandiika</a></li>
                     <li>LinkedIn: <a href="https://linkedin.com/in/amanda-rothmann-472388304"
                             target="_blank">linkedin.com/in/amanda-rothmann</a></li>
                 </ul>
+
+                <form id="form">
+                    <div class="field">
+                        <label for="title">Título</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div class="field">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="field">
+                        <label for="message">Mensagem</label>
+                        <input type="text" name="message" id="message">
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+
+                    <input type="submit" id="button" value="Send Email">
+                </form>
             </section>
         </main>
     </div>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('OSFAuA8gl6wiJAhgF')
+    </script>
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>
